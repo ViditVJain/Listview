@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lyt_container">
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_lay"
+    android:layout_width="match_parent"
+    android:layout_height="140dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:padding="5dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="206dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="top"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="104dp"
+        android:text="Demo"
+        android:textColor="#000"
+        android:lines="1"
+        android:singleLine="true"/>
+
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="104dp"
+        android:padding="2dp"></Spinner>
+
+    <EditText
+        android:id="@+id/ItemCaption"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="104dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:inputType="text"
+        android:lines="1"
+        android:singleLine="true"/>
+
+    <CheckBox
+        android:id="@+id/cbox"
+        android:layout_width="109dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="201dp"
+        android:text="Purchase" />
+
+    <RadioButton
+        android:id="@+id/rbutton"
+        android:layout_width="96dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="1dp"
+        android:text="Select" />
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="3"
+        android:height="@dimen/list_item_height"
+        android:paddingLeft="@dimen/list_item_padding_sides"
+        android:paddingRight="@dimen/list_item_padding_sides">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/txt_delete"
+        android:gravity="center_vertical"
+        android:text="                                                        Deleted"
+        android:clickable="false"
+        android:layout_weight="2"
+        android:hapticFeedbackEnabled="true"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+    </LinearLayout>
+</FrameLayout>
